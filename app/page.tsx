@@ -1,9 +1,14 @@
+// page.tsx
+import React from 'react';
+import VideoPlayer from '../app/components/VideoPlayer';
 
-
-export default function Home() {
+const Page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-slate-400">
-     test
-    </main>
+    <div>
+      <h1>Ma Vidéo</h1>
+      <VideoPlayer />
+    </div>
   );
-}
+};
+
+export default Page;
