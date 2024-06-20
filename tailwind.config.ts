@@ -9,17 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        'heartbeat': 'heartbeat 1s ease-in-out',
-        'fade-in-out': 'fadeInOut 4.1s ease-in-out'
+        heartbeat: "heartbeat 1s ease-in-out",
+        "fade-in-out": "fadeInOut 4.1s ease-in-out",
+        moveRight: "moveRight 2s linear infinite",
       },
       keyframes: {
         heartbeat: {
-          '0%, 100%': { transform: 'scale(1)' },
-          '50%': { transform: 'scale(1.3)' },
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.3)" },
         },
         fadeInOut: {
-          '0%, 100%': { opacity: '0' },
-          '50%': { opacity: '1' },
+          "0%, 100%": { opacity: "0" },
+          "50%": { opacity: "1" },
+        },
+        moveRight: {
+          "0%": { transform: "translateX(0)" },
+          '100%': { transform: 'translateX(calc(100vw))' },
         },
       },
       colors: {

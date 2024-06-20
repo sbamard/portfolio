@@ -26,11 +26,11 @@ export default function CoeurIcon() {
   return (
     <div className="relative flex items-center">
       <HeartIcon
-        className={`w-10 h-10 ${colorClass} ${animClass}`}
+        className={`size-12 ${colorClass} ${animClass}`}
         onClick={handleClick}
       />
       {showMerci && (
-        <span className="absolute  transform -translate-x-1/2 text-m text-gray-700 animate-fade-in-out">
+        <span className="absolute  transform -translate-x-1/2 text-xl text-gray-700 animate-fade-in-out">
           Merci!
         </span>
       )}

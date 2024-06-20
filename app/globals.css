@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.animate-moveRight {
+  animation: moveRight 2s  ;
+}
