@@ -10,13 +10,7 @@ import { UserCircleIcon } from "@heroicons/react/24/solid";
 const Page = () => {
   return (
     <main className="grid grid-cols-6 min-h-screen bg-pasTropBlanc">
-      <Image
-        className="absolute p-10 animate-moveRight"
-        src="/original.gif"
-        width={200}
-        height={200}
-        alt="Picture of the author"
-      />
+      
       <div className="grid justify-center content-end">
         <ArrowDownCircleIcon className="size-20 text-gray-400 mb-8 transition-transform duration-300 transform hover:translate-y-2 hover:animate-bounce" />
       </div>
