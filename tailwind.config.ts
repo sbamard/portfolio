@@ -8,6 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        'heartbeat': 'heartbeat 1s ease-in-out',
+        'fade-in-out': 'fadeInOut 4.1s ease-in-out'
+      },
+      keyframes: {
+        heartbeat: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.3)' },
+        },
+        fadeInOut: {
+          '0%, 100%': { opacity: '0' },
+          '50%': { opacity: '1' },
+        },
+      },
+      colors: {
+        pasTropBlanc: "#f6f7f5",
+        bluePill: "#EBFAFF",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -17,4 +35,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
