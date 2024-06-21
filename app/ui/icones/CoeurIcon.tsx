@@ -3,7 +3,7 @@ import { HeartIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
 export default function CoeurIcon() {
-  const [colorClass, setColorClass] = useState("text-gray-400 text-white");
+  const [colorClass, setColorClass] = useState("md:text-gray-400 text-white");
   const [animClass, setAnimClass] = useState("");
   const [showMerci, setShowMerci] = useState(false);
 
@@ -26,7 +26,7 @@ export default function CoeurIcon() {
   return (
     <div className="relative flex items-center">
       <HeartIcon
-        className={`size-12 ${colorClass} ${animClass}`}
+        className={`size-12 ${colorClass} ${animClass} cursor-pointer`}
         onClick={handleClick}
       />
       {showMerci && (
