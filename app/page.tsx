@@ -11,16 +11,18 @@ const Page = () => {
   return (
     <main className="grid grid-cols-6 min-h-screen bg-pasTropBlanc">
       
-      <div className="grid justify-center content-end">
+      <div className="justify-center content-end hidden md:block pl-20">
         <ArrowDownCircleIcon className="size-20 text-gray-400 mb-8 transition-transform duration-300 transform hover:translate-y-2 hover:animate-bounce" />
       </div>
-      <div className="col-start-3 col-span-2 grid justify-items-center content-center">
+
+      <div className="grid col-start-1 md:col-start-3 md:col-span-2 col-span-7  justify-items-center md:content-center ">
         <VideoPlayer />
       </div>
-      <div className="col-start-5 text-black justify-self-start content-center pl-8 pt-40">
-        <UserCircleIcon className="size-12 text-gray-400" />
+
+      <div className="md:col-start-5 bottom-80 left-3/4  text-black absolute md:static justify-self-start content-center pl-8 pt-40">
+        <UserCircleIcon className="size-12 md:text-gray-400 text-white" />
         <CoeurIcon />
-        <ChatBubbleOvalLeftEllipsisIcon className="size-12 text-gray-400" />
+        <ChatBubbleOvalLeftEllipsisIcon className="size-12 md:text-gray-400 text-white" />
       </div>
     </main>
   );

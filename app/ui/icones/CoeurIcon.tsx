@@ -3,12 +3,12 @@ import { HeartIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
 export default function CoeurIcon() {
-  const [colorClass, setColorClass] = useState("text-gray-400");
+  const [colorClass, setColorClass] = useState("text-gray-400 text-white");
   const [animClass, setAnimClass] = useState("");
   const [showMerci, setShowMerci] = useState(false);
 
   const handleClick = () => {
-    const newColorClass = colorClass === "text-gray-400" ? "text-red-400" : "text-gray-400";
+    const newColorClass = colorClass === "md:text-gray-400 text-white" ? "text-red-400" : "md:text-gray-400 text-white";
     setColorClass(newColorClass);
 
     setAnimClass("animate-heartbeat");
@@ -30,7 +30,7 @@ export default function CoeurIcon() {
         onClick={handleClick}
       />
       {showMerci && (
-        <span className="absolute  transform -translate-x-1/2 text-xl text-gray-700 animate-fade-in-out">
+        <span className="absolute  transform -translate-x-1/2 text-xl md:text-gray-400 text-white animate-fade-in-out">
           Merci!
         </span>
       )}
